@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería La Florencia | Mount Prospect</title>
+    <title>La Florencia Bakery | Mount Prospect</title>
     <style>
         :root {
-            --rosa: #e91e63;
-            --crema: #fffdf5;
-            --marron: #5d4037;
-            --oro: #d4af37;
+            --pink: #e91e63;
+            --cream: #fffdf5;
+            --brown: #5d4037;
+            --gold: #d4af37;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--crema);
-            color: var(--marron);
+            margin: 0; padding: 0;
+            background-color: var(--cream);
+            color: var(--brown);
             line-height: 1.6;
         }
 
@@ -25,19 +24,19 @@
             background-color: white;
             padding: 2rem;
             text-align: center;
-            border-bottom: 5px solid var(--rosa);
+            border-bottom: 5px solid var(--pink);
         }
 
         .logo h1 {
             margin: 0;
             font-size: 2.5rem;
-            color: var(--rosa);
+            color: var(--pink);
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('foto2.jpg');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('foto2.jpg.webp');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -93,12 +92,26 @@
 
         .phone {
             font-size: 2.2rem;
-            color: var(--rosa);
+            color: var(--pink);
             font-weight: bold;
             text-decoration: none;
             display: block;
             margin: 1rem 0;
         }
+
+        /* Schedule Table Style */
+        .hours-table {
+            margin: 2rem auto;
+            width: 100%;
+            max-width: 400px;
+            border-collapse: collapse;
+        }
+        .hours-table td {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .day { font-weight: bold; text-align: left; }
+        .time { text-align: right; }
 
         .reviews {
             margin-top: 3rem;
@@ -107,13 +120,13 @@
         .review-card {
             background: #fdf2f5;
             padding: 1.5rem;
-            border-left: 5px solid var(--rosa);
+            border-left: 5px solid var(--pink);
             margin-bottom: 1rem;
             font-style: italic;
         }
 
         .stars {
-            color: var(--oro);
+            color: var(--gold);
             font-size: 1.2rem;
         }
 
@@ -135,65 +148,77 @@
 </head>
 <body>
 
-    <div class="no-orders">Nota: No aceptamos pedidos en línea por el momento. Por favor llámenos o visítenos.</div>
+    <div class="no-orders">Note: We do not accept online orders at this time. Please call or visit us.</div>
 
     <header>
         <div class="logo">
-            <h1>Panadería La Florencia</h1>
-            <p>Sabor Tradicional en Mount Prospect</p>
+            <h1>La Florencia Bakery</h1>
+            <p>Traditional Savor in Mount Prospect</p>
         </div>
     </header>
 
     <section class="hero">
         <div class="hero-text">
-            <h2>El Pan más fresco cada día</h2>
+            <h2>The Freshest Bread Every Day</h2>
         </div>
     </section>
 
     <div class="container">
         <section class="description">
-            <p><strong>La Florencia en Mount Prospect:</strong> Tradición mexicana con pan fresco diario. Disfrute de conchas, orejas y bolillos crujientes. Especialistas en pasteles de Tres Leches para sus fiestas. Un ambiente familiar donde se sentirá en casa. ¡Calidad artesanal y sabor auténtico en cada bocado!</p>
+            <p><strong>La Florencia Mount Prospect:</strong> Authentic Mexican tradition with fresh bread daily. Enjoy conchas, orejas, and crispy bolillos. Specializing in custom Tres Leches cakes for your celebrations. A family-friendly atmosphere where you'll feel right at home. Quality craft and authentic flavor in every bite!</p>
         </section>
 
         <section class="gallery">
-            <img src="foto1.jpg" alt="Panadería Foto 1">
-            <img src="foto2.jpg" alt="Panadería Foto 2">
-            <img src="foto3.jpg" alt="Panadería Foto 3">
-            <img src="foto4.jpg" alt="Panadería Foto 4">
+            <img src="foto1.jpg.webp" alt="Decorated Cake">
+            <img src="foto2.jpg.webp" alt="Fresh Sweet Bread">
+            <img src="foto3.jpg.webp" alt="Variety of Pastries">
+            <img src="foto4.jpg.webp" alt="Dessert Display">
+            <img src="foto5.jpg.webp" alt="Artisan Rolls">
+            <img src="foto6.jpg.webp" alt="Specialty Cakes">
         </section>
 
         <section class="info-section">
-            <h3>Visítanos o Llámanos</h3>
+            <h3>Visit or Call Us</h3>
             <p>1839 W Algonquin Rd, Mount Prospect, IL 60056</p>
             <a href="tel:8472584452" class="phone">📞 (847) 258-4452</a>
-            <p><strong>Horario:</strong> Abierto todos los días para servirle el mejor pan de la zona.</p>
+            
+            <h3>Store Hours</h3>
+            <table class="hours-table">
+                <tr><td class="day">Monday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+                <tr><td class="day">Tuesday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+                <tr><td class="day">Wednesday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+                <tr><td class="day">Thursday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+                <tr><td class="day">Friday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+                <tr><td class="day">Saturday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+                <tr><td class="day">Sunday</td><td class="time">7:00 AM – 9:00 PM</td></tr>
+            </table>
         </section>
 
         <section class="reviews">
-            <h3>Lo que dicen nuestros clientes</h3>
+            <h3>Real Customer Reviews</h3>
             
             <div class="review-card">
                 <div class="stars">★★★★★</div>
-                "¡El mejor pan dulce de los suburbios! Siempre está fresco y el personal es muy amable. Las conchas son mis favoritas."
-                <br><strong>- Maria G.</strong>
+                "The bolillo rolls, cakes, flans, and bread are very good. Fresh daily!"
+                <br><strong>- Jhonny G.</strong>
             </div>
 
             <div class="review-card">
                 <div class="stars">★★★★★</div>
-                "Los pasteles de Tres Leches son increíbles, no están demasiado dulces, están perfectos. Muy recomendados para cumpleaños."
-                <br><strong>- Juan R.</strong>
+                "Everything is fresh and the staff is very nice. The conchas are my absolute favorite in the area."
+                <br><strong>- Maria V.</strong>
             </div>
 
             <div class="review-card">
                 <div class="stars">★★★★★</div>
-                "Excelente variedad de pan y repostería. Un lugar limpio y con un aroma delicioso desde que entras."
-                <br><strong>- Jose L.</strong>
+                "I love the selection of Mexican sweets. The bakery smells delicious and the service is great."
+                <br><strong>- Local Guide</strong>
             </div>
         </section>
     </div>
 
     <footer>
-        &copy; 2024 Panadería La Florencia - Mount Prospect, IL.
+        &copy; 2024 La Florencia Bakery - Mount Prospect, IL.
     </footer>
 
 </body>
