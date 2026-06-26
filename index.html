@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería La Florencia | Mount Prospect</title>
     <style>
-        :root { --rosa: #e91e63; --crema: #fffdf5; --marron: #5d4037; --oro: #d4af37; }
+        :root { --rosa: #e91e63; --crema: #fffdf5; --marron: #5d4037; }
         body { font-family: sans-serif; margin: 0; padding: 0; background-color: var(--crema); color: var(--marron); line-height: 1.6; }
         header { background: white; padding: 2rem; text-align: center; border-bottom: 5px solid var(--rosa); }
-        .hero { background: #333; height: 250px; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
         .container { max-width: 1000px; margin: auto; padding: 2rem; }
         .description { text-align: center; font-size: 1.1rem; margin-bottom: 2rem; }
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; }
-        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; background: #ddd; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; background: #ddd; border: 2px solid white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .info-section { background: white; padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid #eee; }
-        .phone { font-size: 1.8rem; color: var(--rosa); font-weight: bold; text-decoration: none; display: block; margin: 1rem 0; }
+        .phone { font-size: 2rem; color: var(--rosa); font-weight: bold; text-decoration: none; display: block; margin: 1rem 0; }
         .no-orders { background: #fff3cd; color: #856404; padding: 10px; text-align: center; font-weight: bold; }
         footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #888; }
     </style>
 </head>
 <body>
-    <div class="no-orders">Nota: No aceptamos pedidos en línea. Por favor visítenos.</div>
+    <div class="no-orders">Nota: No aceptamos pedidos en línea. Por favor visítenos o llámenos.</div>
     <header>
         <h1>Panadería La Florencia</h1>
         <p>Tradición Mexicana en Mount Prospect</p>
@@ -29,16 +28,19 @@
         <section class="description">
             <p><strong>La Florencia en Mount Prospect:</strong> Tradición mexicana con pan fresco diario. Disfrute de conchas, orejas y bolillos crujientes. Especialistas en pasteles de Tres Leches para sus fiestas. Un ambiente familiar donde se sentirá en casa. ¡Calidad artesanal y sabor auténtico en cada bocado!</p>
         </section>
+
         <section class="gallery">
-            <img src="foto1.jpg" alt="Panadería 1">
-            <img src="foto2.jpg" alt="Panadería 2">
-            <img src="foto3.jpg" alt="Panadería 3">
-            <img src="foto4.jpg" alt="Panadería 4">
+            <img src="foto1.jpg" alt="Panadería La Florencia 1">
+            <img src="foto2.jpg" alt="Panadería La Florencia 2">
+            <img src="foto3.jpg" alt="Panadería La Florencia 3">
+            <img src="foto4.jpg" alt="Panadería La Florencia 4">
         </section>
+
         <section class="info-section">
             <h3>Visítanos o Llámanos</h3>
             <p>1839 W Algonquin Rd, Mount Prospect, IL 60056</p>
             <a href="tel:8472584452" class="phone">📞 (847) 258-4452</a>
+            <p>Abierto todos los días</p>
         </section>
     </div>
     <footer>&copy; 2024 Panadería La Florencia</footer>
